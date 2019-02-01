@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <AnchorPane prefHeight="500.0" prefWidth="500.0">
+        <MenuBar layoutY="1.0" prefWidth="500.0">
+            <Menu mnemonicParsing="false" text="Datei">
+                <MenuItem mnemonicParsing="false" onAction="#newNote" text="Neue Notiz"/>
+                <MenuItem mnemonicParsing="false" onAction="#end" text="Beenden"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Bearbeiten">
+                <MenuItem mnemonicParsing="false" onAction="#edit" text="Notizzettel bearbeiten"/>
+                <MenuItem mnemonicParsing="false" onAction="#delete" text="Notizzettel löschen"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Hilfe">
+                <MenuItem mnemonicParsing="false" onAction="#help" text="Hilfe"/>
+                <MenuItem mnemonicParsing="false" onAction="#about" text="About ..."/>
+            </Menu>
+        </MenuBar>
+        <ListView fx:id="lv1" layoutX="14.0" layoutY="40.0" prefHeight="448.0" prefWidth="469.0"/>
+    </AnchorPane>
+</GridPane>
